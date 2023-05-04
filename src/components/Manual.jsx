@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/Contact.css";
+import "../styles/Manual.css";
 
-function ContactForm() {
+function Manual() {
   return (
     <div className="contact-container">
       <iframe
@@ -50,4 +50,4 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default Manual;

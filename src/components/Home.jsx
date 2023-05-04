@@ -1,8 +1,16 @@
 import "../styles/Home.css";
 import homeimage from "../assets/homeimage.png";
+import ScrollWheelHandler from "react-scroll-wheel-handler";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { makeStyles } from "@mui/styles";
+const handleClick = () => {
+  const element = document.getElementById("about");
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const useStyles = makeStyles((theme) => ({
   buttonStack: {
     display: "flex",
@@ -42,17 +50,29 @@ export default function Home() {
       <div className="home__title">
         <h1>Your health companion to detect and control syncope</h1>
         <p>
-          an M5 Stack program that detects faint and sends an alarm to the
-          contacts
+          an M5 Stack program that detects faints, give instructions, and alerts
+          contancts
         </p>
         <Stack spacing={2} direction="row">
-          <Button className={classes.containedButton} variant="contained">
-            Download
+          <Button
+            className={classes.containedButton}
+            variant="contained"
+            href="https://github.com/Mohammad-Amjed/testCodespace/archive/refs/heads/main.zip"
+          >
+            DOWNLOAD
           </Button>
-          <Button className={classes.outlinedButton} variant="outlined">
-            Learn more
+          <Button
+            className={classes.outlinedButton}
+            variant="outlined"
+            onClick={handleClick}
+          >
+            LEARN MORE
           </Button>
         </Stack>
+        <div classname="home__buttons">
+          <button className="home__buttons__contained"> DOWNLOAD</button>
+          <button className="home__buttons__outlined">LEARN MORE</button>
+        </div>
       </div>
       <div className="home__image">
         <img src={homeimage} alt="alt" />

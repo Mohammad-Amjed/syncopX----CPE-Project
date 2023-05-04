@@ -1,13 +1,16 @@
 .about {
   display: flex;
+  align-items: center;
   width: 100vw;
-  padding: 0 100px 100px 100px;
-  background-color: #ffacac;
+  padding: 0 100px 0 100px;
+  background-color: #1f3159;
   font-family: "Poppins", sans-serif;
+  color: #fff;
+  height: 100vh;
 }
 
 .about__title {
-  padding-top: 90px;
+  /* padding-top: 90px; */
   flex-basis: 50%;
 }
 
@@ -22,7 +25,7 @@
 }
 
 .about__image {
-  padding-top: 50px;
+  padding-top: -40px;
   flex-basis: 50%;
 }
 

@@ -3,7 +3,7 @@ import m5image from "../assets/m5image.png";
 
 export default function About() {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="about__title">
         <h2>About the device </h2>
         <p>
