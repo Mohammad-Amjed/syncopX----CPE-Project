@@ -1,6 +1,7 @@
+// import the image and the css file
 import "../styles/About.css";
 import m5image from "../assets/m5image.png";
-
+// about components code
 export default function About() {
   return (
     <div id="about" className="about">
