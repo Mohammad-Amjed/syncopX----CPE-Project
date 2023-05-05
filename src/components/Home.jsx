@@ -1,6 +1,7 @@
+// import styles and images
 import "../styles/Home.css";
 import homeimage from "../assets/homeimage.png";
-import ScrollWheelHandler from "react-scroll-wheel-handler";
+// handle click function
 const handleClick = () => {
   const element = document.getElementById("about");
   if (element) {
@@ -8,10 +9,10 @@ const handleClick = () => {
     element.scrollIntoView({ behavior: "smooth" });
   }
 };
-
+// home page code
 export default function Home() {
   return (
-    <div className="home">
+    <div id="home" className="home">
       <div className="home__title">
         <h1>Your health companion to detect and control syncope</h1>
         <p>
