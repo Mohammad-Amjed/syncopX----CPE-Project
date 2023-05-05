@@ -11,7 +11,7 @@ export default function Nav() {
         <div className="navbar__left__links">
           <Link href="#">About</Link>
           <Link href="#">Download</Link>
-          <Link href="#">Contact</Link>
+          <Link href="#">Instructions</Link>
         </div>
       </div>
       <div className="navbar__right">

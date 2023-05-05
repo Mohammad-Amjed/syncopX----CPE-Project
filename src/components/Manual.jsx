@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/Contact.css";
+import "../styles/Manual.css";
 
-function ContactForm() {
+function Manual() {
   return (
     <div className="contact-container">
       <iframe
         src="https://pasteapp.com/p/sGQ9KOJt5Em/embed?view=Wk98VjGH2B5"
-        width="1440"
+        width={document.body.offsetWidth}
         height="800"
         scrolling="no"
         frameborder="0"
@@ -50,4 +50,4 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default Manual;

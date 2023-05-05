@@ -2,7 +2,7 @@ import "./styles.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
-import ContactForm from "./components/Contact";
+import Manual from "./components/Manual";
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
       <Nav />
       <Home />
       <About />
-      <ContactForm />
+      <Manual />
     </div>
   );
 }
