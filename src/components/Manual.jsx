@@ -6,7 +6,7 @@ function Manual() {
     <div className="contact-container">
       <iframe
         src="https://pasteapp.com/p/sGQ9KOJt5Em/embed?view=Wk98VjGH2B5"
-        width="1440"
+        width={document.body.offsetWidth}
         height="800"
         scrolling="no"
         frameborder="0"
